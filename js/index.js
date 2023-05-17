@@ -1,4 +1,4 @@
-const dropArea = document.querySelector(".drag-area");
+const dropArea = document.querySelector(".divIzquierda");
 const dragText = dropArea.querySelector("h2")
 const button = dropArea.querySelector(".seleccionaArchivos");
 const input = dropArea.querySelector("#input-file");

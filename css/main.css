@@ -1,0 +1,101 @@
+/*green: #569B51
+background: #130F26*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+
+    background-color: #130F26;
+    color: white;
+}
+
+.drag-area{
+    border: 5px #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #569B51, -10px -10px 50px #569B51;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divIzquierda{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.divDerecha{
+    text-align: center;
+}
+
+
+.drag-area.active{
+    background-color: #b8d4fe;
+    color: white;
+    border: 2px dashed #618ac9;
+}
+
+.seleccionaArchivos{
+    background-color: #569B51;
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnLogin{
+    background-color: #130F26;
+    
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Estilo dinámico*/
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+#preview{
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+.success{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
